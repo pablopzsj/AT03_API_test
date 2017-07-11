@@ -22,4 +22,3 @@ Ruby is an interpreted programming language, reflexive and Object oriented than 
     *	Unit Test
     *	API
     *	UI Test
-    *	Manual
