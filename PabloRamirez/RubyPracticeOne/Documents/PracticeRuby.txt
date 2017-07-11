@@ -1,0 +1,25 @@
+==== Practice #1 =====
+
+1. What is Ruby?
+
+Ruby is an interpreted programming language, reflexive and Object oriented than was created to Yukihiro Matsumoto. It Combine a Python and Perl inspired syntax.
+
+2. What are pros/cons to Ruby?
+
+   a.	Pros
+    *	It does not have much code conditions.
+    *	It does not need more import files or classes to be used.
+    *	New syntax to use code.
+    *	It does not need to use libraries or imports.
+    *	It does not need used ;
+    *	Code implemented to be used.
+
+   b.	Cons
+    *	No multiple inheritance.
+
+3. What are the 3 testing tiers?
+
+    *	Unit Test
+    *	API
+    *	UI Test
+    *	Manual
