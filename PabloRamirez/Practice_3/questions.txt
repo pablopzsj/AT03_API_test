@@ -1,0 +1,39 @@
+
+======================== Practice #3 =================================
+
+1. Let’s consider you are in a new team :
+Define which code guideline you would suggest for :
+* Format (int, float, string)
+R.- For the correct use of the variables (int, float, string) it would be advisable to use the syntax using (to_)
+ according to the type of variable to be used, to be able to distinguish the variables according to their type and that
+ there are no errors at the time of executing the Script eg:
+
+    variable = get.chomp.to_i
+    variable = get.chomp.to_f
+
+* Classes
+R.- The correct use of classes is to follow the editor's syntax, eg:
+    def name_class
+     ---------
+    end
+
+* Methods
+R.- For correct use of methods it is advisable to make use of parentheses (), since a good IDE programming environment,
+  advises using parentheses like "Jetbrains RubyMine", eg:
+
+    def method (name)
+     ----------
+    end
+
+* Variables, Getter/Setter
+R.- Make use of the module attributes to simplify code lines, eg:
+
+    Attr_reader: name
+    Attr_writer: name
+    Attr_accessor: name
+
+* If condition
+R.- Make use of short-if expression, to simplify code lines and make use of the advantages that Ruby offers when using
+  the code editor, eg:
+
+    result = (name)? True: false
