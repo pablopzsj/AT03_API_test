@@ -1,0 +1,6 @@
+============================= Singleton ==============================
+1.- Explain which differences you see between both definitions
+
+R.- When the singleton pattern is not used, each time we want to use the values of the instantiated object we will have
+to initialize the instance again, whereas when using a class with the pattern Singleton its method of initialization is
+only called once.

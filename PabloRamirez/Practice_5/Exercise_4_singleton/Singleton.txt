@@ -1,0 +1,8 @@
+======================== Singleton ===================================
+ 1.- Should be better to use singleton for this implementation? Why?
+
+ R.- For this exercise the best would be to use the Singleton pattern, since every time we need to use the values of
+ the object (obtain the products of the store), we will only have to initialize once the instance, whereas if we would
+ not use it we would have to call each Time we would like to see the products to the method of initialization of the
+ object.
+
