@@ -1,0 +1,15 @@
+Insert the number of people: 3
+ID: 1
+Username: 1
+Will perform a calculation: YES 
+Which type of conversion do you use?: 
+1) From millimeters to centimeters 
+2) From centimeters to meters
+3) From meters to kilometers
+1
+ID: 2
+Username: 2
+Will perform a calculation: 3 
+ID: 23
+Username: 23
+Will perform a calculation: NO 
