@@ -1,0 +1,69 @@
+===================================== Practice ============================================
+
+1. RUN THE FEATURE FILE WITHOUT DRY-RUN OPTION
+
+    You are in the Samsung Page
+
+    SmartTV Curvo 55
+
+    You can implement step definitions for undefined steps with these snippets:
+
+    And(/^the price are: <price>$/) do
+      pending # Write code here that turns the phrase above into concrete actions
+    end
+
+    Skipped step
+
+    You are in the Samsung Page
+
+    SmartTV 3D
+
+
+    You can implement step definitions for undefined steps with these snippets:
+
+    And(/^the price are: <price>$/) do
+      pending # Write code here that turns the phrase above into concrete actions
+    end
+
+    Skipped step
+    2 scenarios (2 undefined)
+    8 steps (2 skipped, 2 undefined, 4 passed)
+    0m0.057s
+
+2. RUN THE FEATURE FILE USING DRY-RUN OPTION
+
+   Feature: Samsung TV models homepage
+     As a user of the Samsung website
+     I want to have a website for every Samsung TV model
+     So that I can get all the information about my favorite model
+
+     Scenario Outline: TV models page        # features/models_tv.feature:6
+       Given I am on the Samsung page        # features/models_tv.feature:7
+       When the models pages are: <models>   # features/models_tv.feature:8
+       And the price are: <price>            # features/models_tv.feature:9
+       Then I should get the Smart TV models # features/models_tv.feature:10
+
+       Examples:
+         | models           |
+         | SmartTV Curvo 55 |  You are in the Samsung Page, SmartTV Curvo 55
+         | SmartTV 3D       |  You are in the Samsung Page, SmartTV 3D
+
+   2 scenarios (2 undefined)
+   8 steps (2 skipped, 2 undefined, 4 passed)
+   0m0.142s
+
+   You can implement step definitions for undefined steps with these snippets:
+
+   When(/^the price are: <price>$/) do
+     pending # Write code here that turns the phrase above into concrete actions
+   end
+
+3. WHICH ONE IS THE DIFFERENCE BETWEEN BOTH EXECUTIONS?
+
+    The differences are:
+
+    When executing the command --dry-run does not execute the feature but rather it checks the steps that are not
+    defined and asks that the action with the step is made concrete.
+
+    When executing the feature file, the scenario is executed but at the moment of finding a step that has not defined
+    its step the other steps are marked as skipped not being executed.

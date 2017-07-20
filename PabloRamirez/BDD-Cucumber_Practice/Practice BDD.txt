@@ -1,0 +1,103 @@
+================================================== Practice ===============================================
+
+1. Research:
+a) When and why BDD was defined
+
+	BDD began to be defined in 2003 with Agiledox, the ancestor of BDD, was created to address recurring problems in
+	teaching TDD, it is clear that BDD requires familiarity with a greater variety of concepts than TDD.
+	The use of BDD does not require any programming tools or languages, and is mainly a conceptual approach; In order to
+	have a purely technical practice or that depends on the specific tools, the point is completely lost
+
+b) The most important aspects of BDD
+
+	- Strong collaboration. BDD, allows everyone involved in the project to easily participate in the product
+	development cycle. And by using simple language, everyone is able to write behavioral scenarios.
+	-High visibility. Using a language understood by everyone, each gets a strong visibility in the progress of the
+	project.
+	-The software design follows the value of the business. BDD places great importance on business value and needs.
+	By prioritizing with the client, based on the value it provides, developers are able to provide a better result
+	because they have a solid understanding of how the client thinks.
+	- The ubiquitous language. The ubiquitous language is understandable by all team members, which reduces
+	conceptions and misunderstandings and makes it easier for new members to join the work process.
+	-The development of software meets the needs of the user. By focusing on business needs, you will get satisfied
+	users. With BDD, as its name implies, it focuses on behavior, which has a stronger impact than the implementation
+	itself.
+	-More confidence on the part of the developers. Teams using BDD are generally much more confident that they will
+	not break the code and have better predictability when it comes to their work.
+	- Lower costs. By improving the quality of the code, it basically reduces maintenance costs and minimizes project
+	risks.
+
+c) Why it is useful and when it could be applied.
+
+	Because BDD provides more precise guidance on how to organize the conversation between developers, testers and
+	domain experts, they are closer to everyday language and have a more superficial learning curve compared to other
+	tools. Tools targeting a BDD approach generally allow the automatic generation of technical and end user
+	documentation of the BDD "specifications"
+
+d) Which type of teams could implement BDD.
+
+	Both mature and new equipment can implement BDD, where mature teams adapt and refine their process to follow their
+	specific needs and context.
+	With these steps the teams will have an idea or general approach for the use of BDD:
+		* Discover
+		* Define
+		* Formalise
+		* Automate
+		* Deliver
+
+2. Structure of a feature - Give an example
+
+	The structure of a feature is:
+		* Name
+	    * Size [Optional]
+	    * Priority
+
+	Example: 
+	Feature: Serve coffee
+	 	In order to earn money
+  		Customers should be able to
+  		buy coffee at all times
+
+ 3. Structure of a user story – Give an example
+
+	The structure of a user story is:
+		Title (one line describing the story)
+		
+		Narrative:
+			As a [role]
+			I want [feature]
+			So that [benefit]
+
+	Example:
+
+	Feature: Samsung TV models homepage
+
+	As a user of the Samsung website
+	I want to have a website for every Samsung TV model
+	So that I can get all the information about my favorite model     
+
+4. Structure of a scenario – Give an example
+
+	The structure of a scenario is:
+		
+		Given some initial context (the givens)
+		When an event occurs
+		then ensure some outcomes
+
+	Example:
+	Scenario: TV models page
+		Given I am on the Samsung <models> page
+		When the models pages loads
+		Then I should get the TV models
+
+5. Differences between BDD and BDT
+
+The differences are:
+
+	* BDD begins with the business goal. The goal of BDT is a business readable and domain specific language that allows
+	you to describe a behavior of a system without putting details on how that behavior is developed.
+
+	* In BDT, Tests in the form of simple text features/descriptions with scenarios are typically written before
+	anything else and checked by the non-technical shareholders.
+
+
